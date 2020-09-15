@@ -1,0 +1,227 @@
+@media (max-width: 599px){
+
+    .text2 {
+        margin: auto;
+        font-weight: 900;
+        font-size: 22px;
+        color: #fff;
+
+   }
+   
+    /* display none */
+
+    /* Header style */
+    header {
+        top: 0;
+        z-index: 99;
+        position: fixed;
+        background: #fff;
+    }
+    .logo_container {
+        display: flex;
+        margin: auto 10px;
+        position: relative;
+    }
+        .hamburger{
+            display: block;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            margin:10px 20px 10px 10px ;
+            width: 40px;
+            height: 40px;
+            cursor:pointer;
+        }
+        .hamburger span{
+            position: absolute;
+            border-radius: 3px;
+            height: 4px;
+            background: #2c3335;
+        }
+    
+        #span1{
+            top: 16px;
+            right: 0;
+            transition: 0.5s;
+            width: 40px;
+            transform: rotate(0deg);
+        }
+        #span1.active {
+            transform: rotate(-225deg);
+            transition: 0.5s;
+            top: 20px;
+        }
+        #span2 {
+            right: 0;
+            top: 24px;
+            width: 20px;
+            transition: 0.5s;
+        }
+        #span2.active {
+            top: 20px;
+            width: 40px;
+            transform: rotate(-315deg);
+            transition: 0.5s;
+        }
+    nav {
+        display: flex;
+        flex-direction: column;
+        background:transparent;
+        margin: auto;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        z-index: 99;
+    }
+        nav button {
+            z-index: 99;
+            margin: 10px 0;
+            padding: 5px 4px;
+            text-decoration: none;
+            background: #2c3335;
+            border-radius: 20px;
+            border: 4px solid #0984e3;
+            outline-color: none;
+            cursor: pointer;
+        }
+        nav button:hover {
+            background: #0984e3;
+        }
+        nav .ex {
+            background: #0984e3;
+            transform: translateX(110%);
+        }
+        nav .ex.active,nav .np.active,nav .na.active,nav .ap.active,nav .c.active {
+            transform: translateX(0);
+        }
+        nav .np {
+            transform: translateX(120%);
+            transition: 0.4s;
+        }
+        nav .na {
+            transform: translateX(130%);
+            transition: 0.5s;
+        }nav .ap {
+            transform: translateX(140%);
+            transition: 0.6s;
+        }nav .c {
+            transform: translateX(150%);
+            transition: 0.7s;
+        }
+        
+            nav button a {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 700;
+                margin: auto 10px;
+                text-decoration: none;
+                color: #fff;
+                background: transparent;
+            }
+            nav button:hover a {
+                color: #2c3335;
+            }
+            nav #ex a {
+                color: #2c3335;
+            }
+
+    /* acceuil */
+    #acceuil {
+        background: #2c3335;
+    }
+    .textzone_container {
+        z-index: 0;
+        margin: auto;
+        background: transparent;
+        width: auto;
+        height: auto;
+        display: flex;
+        position: relative;
+        
+    }
+        .textzone {
+            position: relative;
+            z-index: 0;
+            font-size: 50px;
+        }
+        .textzone::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -20px;
+            height: 10px;
+            border: none;
+            border-radius: 10000px;
+            background: #0984e3;
+            transform: scaleX(.25);
+            transform-origin: .5 0;
+        }
+            .textzone span {
+                color: #0984e3;
+                text-shadow: 0 5px 0px #ffffff;
+            }
+    .scroll_btn {
+        position: absolute;
+        display: flex;
+        padding: 0;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: none;
+        background: #0984e3;
+        left: 50%;
+        bottom:30px;
+        transform: translateX(-50%);
+    }
+
+    /* Nos services */
+    #nos_services {
+        flex-direction: column;
+        padding: 2.5% 7.5% calc(2.5% + 50px) 7.5%;
+    }
+    .services {
+        width: 100%;
+        height: 500px;
+    }
+    .petit h3 {
+        font-size: 32px;
+    }
+
+    /* a propos */
+    #a_propos {
+        height: 200%;
+    }
+    /* footer */
+    footer {
+
+        height: auto;
+        flex-direction: column;
+    }
+    .chiffre {
+        flex-direction: column;
+        position: static;
+        height: auto;
+        margin:77px auto 0 auto;
+    }
+    .right {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .left {
+        margin: 0;
+        text-align: center;
+        max-width: 100%;
+    }
+    .nav {
+        flex-direction: column;
+    }
+    .nav button {
+        max-width: 50%;
+        margin: 5px auto;
+    }
+    .social {
+        width: 80%;
+        margin: 10px auto 0 auto;
+    }
+}

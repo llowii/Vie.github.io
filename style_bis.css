@@ -1,0 +1,99 @@
+  
+    header {
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 93px;
+        height: 100%;
+        display: flex;
+        box-shadow: 1px 1px 10px 0px #2c3335;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        background: #fff;
+    }
+    /* }.logo::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -2.5px;
+        height: 5px;
+        border-radius: 100px;
+        background: #2c3335;
+        transform: scaleX(1);
+        transform-origin: 0 0;
+    } */
+    .logo_container {
+        margin:  10px auto 0 auto;
+        flex-wrap: wrap;
+        width: 52.5px;
+        height: 52.5px;
+        position: relative;
+    }
+    .logo {
+        height: 100%;
+        margin: auto;
+        font-weight: 900;
+        font-size: 24px;
+        color: #0984e3;
+        position: relative;
+    }
+    .logo div{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .logo div span {
+        color: #2c3335;
+    }
+    .logo_letter_bottom {
+        bottom: 0;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: 300px;
+        justify-content: space-between;
+    }
+    .header_btn {
+        text-align: center;
+        margin: auto 0;
+        background: transparent;
+        font-weight: 800;
+        color: #0984e3;
+        padding: 5px 0;
+        transform: scale(0.9);
+    }
+    .header_btn--trans {
+        color: #2c3335;
+    }
+    .header_btn--trans:hover {
+        background: transparent;
+        color: #0984e3;
+    }
+    .scroll_btn {
+        left: calc(50% + 42.5px);
+    }
+    #acceuil ,#nos_services , #nos_agences, #a_propos, footer {
+        padding: 2% 5% 2% calc(5% + 85px);
+    }
+    .header_btn--footer {
+        font-size: 11px;
+        padding: 5px 10px;
+        margin: auto 5px auto 5px;
+        text-align: center;
+        transform: scale(1);
+    }
+    .footer {
+        height: auto;
+    }
+    .right {
+        padding: 0;
+    }
+    .nav {
+        display: none;
+    }
+
+        
